@@ -34,8 +34,8 @@ def parsing_sample (file): #file should be .txt
     
     list_sample = '/mnt/d/F19FTSAPHT0619_PEPuisR/list_sample.txt'
 for sample in open(list_sample):
-    sample = sample.split('\n')[0]
-    sample_file = '/mnt/d/F19FTSAPHT0619_PEPuisR/list_reads/{}'.format(sample)
+    sample = sample.split('.')[0]
+    sample_file = '/mnt/d/F19FTSAPHT0619_PEPuisR/list_reads/{}.txt'.format(sample)
     print ('Working with folder clean_data/{}'.format(sample))
     
     #_get .gz list on each sample folder
